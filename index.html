@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frontier Odds - Rogue Risk</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Frontier Odds</h1>
+      <p class="tagline">A rogue-lite dice conquest for one human commander vs. three scheming rivals.</p>
+    </div>
+    <div class="status" id="turnStatus"></div>
+  </header>
+
+  <main>
+    <section class="board-panel">
+      <div class="board" id="board"></div>
+      <div class="legend">
+        <h3>Tile Traits</h3>
+        <ul>
+          <li><span class="trait fort"></span> Fortified Ridge: +1 defense for defender.</li>
+          <li><span class="trait shrine"></span> Battle Shrine: +1 attack for the tile's owner.</li>
+          <li><span class="trait ruin"></span> Haunted Ruin: -1 attack for whoever attacks from it.</li>
+          <li><span class="trait mine"></span> Gold Mine: +2 gold income.</li>
+        </ul>
+        <p>Click one of your tiles, then click an adjacent enemy tile to attack. End your turn to let the rival AIs plot.</p>
+      </div>
+    </section>
+
+    <section class="side-panel">
+      <div class="panel" id="playerPanel"></div>
+
+      <div class="panel shop" id="shop">
+        <h3>Artifact Bazaar</h3>
+        <div id="shopItems"></div>
+      </div>
+
+      <div class="panel log">
+        <h3>Battle Log</h3>
+        <div id="log"></div>
+      </div>
+    </section>
+  </main>
+
+  <template id="tileTemplate">
+    <div class="tile" data-id="">
+      <div class="tile-label"></div>
+      <div class="trait-icon"></div>
+    </div>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+</html>
