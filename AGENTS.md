@@ -1,3 +1,11 @@
-Hello
-Can you write me an HTML game I can play from my browser? It would be a game like RISK, where you move in a tile and roll a dice to take over the tile. It could take place on an earth like board. However, id like to add rogue-like elements. Like using money to buy artifacts that grant bonuses, or bonuses or nerfs when taking a tile or losing a tile. Have it so that i can play against a simple AI, against 3 other players. You have free creative control over the rogue-like elements.
-There is nothing else in this project so far. Once you have made changes, you can rewrite this file with your changes. 
+Development notes
+-----------------
+- This repo hosts a lightweight browser game called **Frontier Odds**.
+- No build step is required; open `index.html` in a modern browser to play.
+- Keep styling in `styles.css` and logic in `script.js` for clarity.
+- Prefer readable variable names and concise, explanatory UI copy in the HTML.
+
+PR / commit notes
+-----------------
+- Summaries should mention gameplay or UX changes in plain language.
+- No additional formatting requirements beyond the global instructions.
